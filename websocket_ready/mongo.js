@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 // const nanofuck = require('./nano')
-mongoose.connect('mongodb://127.0.0.1:27017/WebSocket');
+mongoose.connect('mongodb+srv://users:indra222@cluster0.ujnr2uh.mongodb.net/WebSocket');
 // mongoose.connect('mongodb://127.0.0.1:27017/clickCounter');
 
 
