@@ -25,14 +25,15 @@ const io = new Server(server, {
 io.on("connection", (socket) => {
   // console.log(`user connected: ${socket.id}`)
 
-  socket.on('address', async (e) => {
+  socket.once('address', async (e) => {
 
     // console.log(typeof e.email)
+
 
     // console.log('logged sei address is: ' +e);  
     a = await addressFinder(e)
 
-    // console.log(a)
+    // console.log(alldata)
 
     if (a === false) {
       const user = userModel({
